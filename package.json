@@ -1,0 +1,16 @@
+{
+  "name": "fusionauth-render-proxy",
+  "version": "1.0.0",
+  "description": "Proxies requests with correct Headers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Alex Patterson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-http-proxy": "^2.0.0",
+    "request": "^2.88.2"
+  }
+}
