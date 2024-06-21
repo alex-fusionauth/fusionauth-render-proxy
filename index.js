@@ -2,8 +2,8 @@ const proxy = require("express-http-proxy");
 const app = require("express")();
 
 const port = process.env.PORT || 3001;
-const targetServerURL = process.env.TARGET_SERVER_URL || "localhost:9011"; // Use TARGET_SERVER_URL for flexibility
-
+const targetServerURL =
+  process.env.RENDER_FUSIONAUTH_INTERNAL_URL || "localhost:9011";
 // Proxy all requests to the target server
 
 app.all(
