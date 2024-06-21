@@ -7,7 +7,7 @@ const fusionAuthURL =
 
 app.use(
   "*",
-  proxy(`http://${fusionAuthURL}:9011`, (req, res, next) => {
+  proxy(`http://${fusionAuthURL}`, (req, res, next) => {
     req.headers["X-Forwarded-Port"] = 443;
     next();
   })
